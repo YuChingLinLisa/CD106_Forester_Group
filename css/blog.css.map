@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/page/blog.scss"
+    ],
+    "names": [],
+    "file": "blog.css"
+}
