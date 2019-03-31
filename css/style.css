@@ -62,7 +62,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
 }
 
 nav #header-cloud-ani {
@@ -235,8 +234,9 @@ nav .header-background-cloud ul li a {
 }
 
 .wrap {
-  width: 1200px;
-  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 140px auto 0;
 }
 
 a {

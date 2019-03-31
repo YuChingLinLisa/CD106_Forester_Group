@@ -246,4 +246,98 @@ a {
 input {
   outline: none;
 }
-/*# sourceMappingURL=game.css.map */
+
+.header-space {
+  height: 200px;
+}
+
+.blogShare {
+  width: 70vw;
+  height: 110vh;
+  margin: auto;
+  background-image: url("../images/board.png");
+  background-size: cover;
+}
+
+.blogShare .blogShare-heading h2 {
+  font-family: '微軟正黑體';
+  font-size: 28px;
+  color: #666;
+}
+
+.blogShare .previewPlan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 10vw;
+}
+
+.blogShare .selectPlan {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.blogShare .selectPlan div {
+  vertical-align: top;
+}
+
+.blogShare .selectPlan select {
+  width: 150px;
+}
+
+.blogShare .event-wrap {
+  border: 1px solid #666;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.blogShare .event-wrap .event-item {
+  width: 120px;
+  border: 1px solid #666;
+  background-color: yellow;
+  display: inline-block;
+  text-align: center;
+}
+
+.blogShare .event-wrap .event-item img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.blogShare .event-wrap .event-item h3 {
+  font-family: '微軟正黑體';
+  font-size: 24px;
+  color: #666;
+}
+
+.blogShare .blogSummit {
+  width: 50vw;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 10px;
+}
+
+.blogShare .blogSummit form #typeBlogName {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.blogShare .blogSummit form .blogTextarea {
+  width: 50vw;
+  margin: 10px 0;
+}
+
+.blogShare .blogSummit form .blogShare-btnContainer {
+  margin: auto;
+  text-align: center;
+}
+
+.blogShare .blogSummit form .blogShare-btnContainer button {
+  color: #666;
+  width: 100px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=blogShare.css.map */
