@@ -62,7 +62,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 999;
 }
 
 nav #header-cloud-ani {
@@ -235,8 +235,9 @@ nav .header-background-cloud ul li a {
 }
 
 .wrap {
-  width: 1200px;
-  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 140px auto 0;
 }
 
 a {
@@ -247,10 +248,8 @@ input {
   outline: none;
 }
 
-.try {
-  width: 100%;
-  height: 1000px;
-  margin-top: 30%;
-  background-color: #92be40;
+div, h1, h2, h3, h4, h5, h6, p, span {
+  font-family: '微軟正黑體';
+  letter-spacing: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
