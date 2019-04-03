@@ -254,6 +254,7 @@ div, h1, h2, h3, h4, h5, h6, p, span {
 }
 
 .wrap {
+  outline: 1px solid red;
   position: relative;
 }
 
@@ -307,14 +308,17 @@ div, h1, h2, h3, h4, h5, h6, p, span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-bottom: 60px;
 }
 
 .allPlan-group .allPlan-box {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 33.33333333333%;
+  outline: 1px solid red;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }

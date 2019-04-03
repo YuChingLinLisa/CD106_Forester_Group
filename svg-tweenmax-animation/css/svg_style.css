@@ -1,0 +1,22 @@
+body {
+	background: rgb(238, 175, 156);
+}
+svg {
+	position: absolute; left: 50%; top: 50%;
+	transform: translate(-50%, -50%);
+
+}
+#ani1 {
+	width: 100%; 
+	background: rgb(238, 175, 156);
+}
+#white-ring {
+	fill: none; 
+	stroke: #fff;
+	stroke-width: 14;
+}
+#yellow-ring {
+	fill: none; 
+	stroke: #fff5ab;
+	stroke-width: 14;
+}
