@@ -2,6 +2,9 @@
     width: 100%;
     max-width: $dt;
     margin: 140px auto 0;
+    position: relative; 
+    top: 200px;
+    z-index: 1;
 }
 
 

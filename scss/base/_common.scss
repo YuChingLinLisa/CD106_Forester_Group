@@ -6,6 +6,10 @@ input{
     outline:none; 
 }
 
+.clearfix {
+    clear: both;
+}
+
 @mixin btn($btnColor, $bthBgc) {
     cursor: pointer;
     position: relative;    
@@ -34,4 +38,15 @@ input{
                     0px 2px 0px #aaa,
                     0px 2px 0px #999,
     }
+}
+
+//plan活動規劃的外框線
+@mixin border-frame {
+    border-radius: 13px;
+    border: 5px solid $brown;
+    background-color: $white;
+}
+
+@mixin screen-margin  {
+    margin: 20vh 0;
 }

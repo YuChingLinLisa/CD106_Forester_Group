@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.icon').click(function(){
+                $('.icon').toggleClass('active');
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./sass/layout/header.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="icon" id="icon">
+            <div class="hamburger" id="hamburger"></div>
+        </div>
+        <div id="small-forester-logo">
+                <a href="index.php"><img src="images/logo_green.svg" alt="手機板森存者商標"></a>
+        </div>
+        <div id="header-member">
+            <a href="" ><img src="./images/punk.jpg" alt=""></a>
+        </div>
+        
+        <img id="header-cloud-ani" src="images/header_cloud.png" alt="標題背景白雲">
+        <img id="header-cloud-anii" src="images/header_cloud.png" alt="標題背景白雲">
+        <div class="header-background-cloud">
+            <span id="show_span">
+                <ul>
+                    <li><a href="page/plan.php">活動規劃</a></li>
+                    <li><a href="page/order.php">線上訂票</a></li>
+                    <li><a href="index.php"><img id="forester-logo" src="images/logo_green.svg" alt="森存者商標"></a></li>
+                    <li><a href="page/blog.php">手札分享</a></li>
+                    <li><a href="page/game.php">尋找森存者</a></li>
+               
+               
+                 </ul>
+                 
+            </span>
+            <div ></div>
+        </div>
+    </nav>
+    <script src="./sass/layout/header_js.js"></script>  
+    <div class="wrap"></div> 
+    
+
+</body>
+</html>

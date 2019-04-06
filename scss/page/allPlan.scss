@@ -7,26 +7,33 @@
 
 //全部活動 allPlan的樣式
 .wrap {
-    outline: 1px solid red;
+    // outline: 1px solid red;
     position: relative;
+    margin: 0 auto;
 }
 
 .all-plan-title {
     width: 30%;
+    // outline: 1px solid red;
+    h2 {
+        @include big-title($black);
+        // outline: 1px solid red;
+        position: absolute;
+        top: 55px;
+        left: 115px;
+    }
     img {
         position: relative;
         top: -150px;
-        display: block;
-        margin: auto;
         z-index: -1;
-        width: 40vh;
+        width: 370px;
     }
 }
 
 .explain-icons {
     // width: 100%;
     position: absolute;
-    top: 70px;
+    top: 40px;
     right: 0px;
     display: flex;
     .icons-all {
@@ -40,6 +47,7 @@
         span {
             // outline: 1px solid red;
             @include bodyP;
+            color: $white;
             display: block;
             margin-top: 10px;
             text-align: center;
@@ -62,7 +70,7 @@
     .allPlan-box{
         box-sizing: border-box;
         width: 33.33333333333%;
-        outline: 1px solid red;
+        // outline: 1px solid red;
         transition: all .5s ease-in-out;        
         h2 {
         @include sm-title($darkBlue);
