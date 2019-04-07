@@ -4,9 +4,30 @@
 
 // 一屏：三項熱門活動介紹
 
+/* width */
+::-webkit-scrollbar {
+  width: 15px; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f8e958; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dc719d;
+  border-radius: 20px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e13764; 
+}
+
 [type=radio] {
     display: none;
-  }
+}
 
 // #btn-go-plan-now {
 //   @include btn($white, $pink);
@@ -34,7 +55,7 @@
   position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   label {
     @include border-frame;
     margin: auto;
@@ -51,7 +72,7 @@
       margin: 10px auto;
       text-align: left;
       h3 {
-      @include md-title($black);
+      @include md-title($blue);
       margin: 30px 0;
       }
       p{
@@ -74,12 +95,27 @@
       .event-image-third {
         background-image: url(../../images/plan/rope.jpg);
       }
-      .equal-value {
-        @include bodyP;
-        width: 100%;
+      .euqal-add-box {
+        width: 90%;
         // outline: 1px solid red;
         position: absolute;
         bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        .equal-value {
+          align-self: flex-end;
+          @include bodyP;
+          font-weight: bold;
+          color: #4da45d;
+          img {
+            width: 18px;
+            vertical-align: top;
+          }
+        }
+        button {
+          @include btn($red,$yellow);
+          width: 200px;
+        }
       }
     }      
   }
@@ -123,7 +159,7 @@
       }
       .value-item {
         @include sm-title($black);
-        outline: 1px solid green;
+        // outline: 1px solid green;
         margin: 10px 0;
       }  
     }
@@ -154,7 +190,7 @@
 .plan-container-step-three,
 .plan-container-step-four,
 .plan-container-confirmation {
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
   @include border-frame;
   width: 95%;
   margin: 0 auto 50px;
@@ -172,7 +208,8 @@
     .plan-step {
       @include bodyP;
       margin-right: 10px;
-      color: blue;
+      color: #d63986;
+      font-weight: bold;
       vertical-align: top;
     }
     .plan-explaination {
@@ -202,6 +239,14 @@
     right: 5%;
     width: 100%;
     text-align: right;
+    #list-plan {
+      @include bodyP;
+      font-weight: bold;
+      background-color: #85cfdc;
+      height: 40px;
+      border: none;
+      outline: none;
+    }
   }
   .event-detail-group {
     display: flex;
@@ -240,6 +285,12 @@
   border-radius: 13px;
   position: relative;
   margin: 2%;
+  cursor: pointer;
+  transition: .3s ease;
+  &:hover {
+    background-color: #fdf7bd;
+    transition: .3s ease;
+  }
   .event-cover {
     width: 41%;
     height: 100px;
@@ -261,7 +312,7 @@
     position: relative;
     width: $width - 50%;
     h4 {
-      @include md-title($black);
+      @include md-title($blue);
     }
     table{
       margin: 10px 0 10px 0;
@@ -280,6 +331,7 @@
     }
     .value-pic-box{
       @include bodyP;
+      color: #4da45d;
       font-weight: bold;
       position: absolute;
       bottom: 0;
@@ -371,7 +423,7 @@
   .upload-cover-box {
     span {
       @include bodyP;
-    }    
+    }   
   }
   .choose-cover-box {
     margin-top: 1%;
@@ -413,7 +465,7 @@
 }
 
 #finalize-my-plan,
-#confirm-my-plan {
+#confirm-and-buy-ticket {
   @include btn($white,$pink);
   width: 250px;
   display: block;
@@ -448,8 +500,12 @@
       }
     }
     .confirmation-event-detail-box {
-      outline: 1px solid red;
+      // outline: 1px solid red;
       width: 86%;
+      cursor: default;
+      &:hover {
+        background: none;
+      }
       .event-txt-box {
         width: $width - 50%;
       }
@@ -501,11 +557,52 @@
   }
 }
 
-#confirm-my-plan {
+.confirm-buy-btn-box {
+  // outline: 2px solid red;
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 50px;
+  #confirm-my-plan {
+    @include btn($red,$yellow);
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 
+@media screen and (max-width:768px){
+  .wrap {
+    margin: 0 auto;
+    .plan-screen-first {
+      margin: 0;
+      #hot-event-container label {
+        width: 90%;
+        transform: none;
+      }
+    }
+  }
+
+  #s1:checked ~ #slide3, #s2:checked ~ #slide1,
+  #s3:checked ~ #slide2 {
+    box-shadow:none;
+    transform: none;
+  }
+
+  #s1:checked ~ #slide1, #s2:checked ~ #slide2,
+  #s3:checked ~ #slide3 {
+    box-shadow:none;
+    transform: none;
+  }
+
+  #s1:checked ~ #slide2, #s2:checked ~ #slide3,
+  #s3:checked ~ #slide1 {
+    box-shadow:none;
+    transform: none;
+  }
+
+  
+}
 
 
 

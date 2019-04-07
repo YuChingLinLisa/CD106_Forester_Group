@@ -73,7 +73,7 @@
         // outline: 1px solid red;
         transition: all .5s ease-in-out;        
         h2 {
-        @include sm-title($darkBlue);
+        @include sm-title($blue);
         font-weight: bold;
         width: 150px;
         margin: 0 auto 30px;
@@ -136,6 +136,36 @@
     width: 150px;
     margin: 20px auto 60px;
 }
+
+@media screen and (max-width:768px){
+
+    ::-webkit-scrollbar {
+        display: none; 
+    }
+
+    .allPlan-group {
+        width: 100%;
+        display: block;
+        margin-bottom: 0;
+        .allPlan-box {
+            width: 100%;
+            margin-bottom: 70px;
+            .allPlan-pic {
+                width: 90%;
+                margin: 0 5%;
+                left: 0;
+                img {
+                    border: 0; 
+                    box-shadow: 3px 3px 2px $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .explain-icons {
+        top: 175px;
+    }
 
 
 

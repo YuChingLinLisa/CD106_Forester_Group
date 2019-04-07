@@ -407,7 +407,8 @@ a {
   text-decoration: none;
 }
 
-input {
+input,
+button {
   outline: none;
 }
 
